@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/go-azure-helpers/authentication"
 	"github.com/hashicorp/go-azure-helpers/resourcemanager/location"
 	"github.com/hashicorp/go-azure-helpers/sender"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/resourceproviders"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/resourceproviders"
 )
 
 type ClientBuilder struct {

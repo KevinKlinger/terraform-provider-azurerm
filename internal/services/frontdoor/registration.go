@@ -1,7 +1,7 @@
 package frontdoor
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 // TODO: move this to the network one

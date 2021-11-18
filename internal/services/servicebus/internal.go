@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/services/preview/servicebus/mgmt/2021-06-01-preview/servicebus"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 func expandAuthorizationRuleRights(d *pluginsdk.ResourceData) *[]servicebus.AccessRights {

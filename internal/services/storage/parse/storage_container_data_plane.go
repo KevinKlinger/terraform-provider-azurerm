@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/resourceid"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/resourceid"
 	"github.com/tombuildsstuff/giovanni/storage/2019-12-12/blob/containers"
 )
 

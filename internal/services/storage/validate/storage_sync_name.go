@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/parse"
 )
 
 func StorageSyncName(v interface{}, _ string) (warnings []string, errors []error) {

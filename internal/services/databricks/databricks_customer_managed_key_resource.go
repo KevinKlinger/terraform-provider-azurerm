@@ -8,16 +8,16 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-helpers/lang/response"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/locks"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/databricks/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/databricks/sdk/2021-04-01-preview/workspaces"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/databricks/validate"
-	keyVaultParse "github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/parse"
-	keyVaultValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/locks"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/databricks/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/databricks/sdk/2021-04-01-preview/workspaces"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/databricks/validate"
+	keyVaultParse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/parse"
+	keyVaultValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
 )
 
 func resourceDatabricksWorkspaceCustomerManagedKey() *pluginsdk.Resource {

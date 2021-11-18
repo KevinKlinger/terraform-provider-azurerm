@@ -2,12 +2,12 @@ package client
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/datalake/store/2016-11-01/filesystem"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	analyticsaccount "github.com/hashicorp/terraform-provider-azurerm/internal/services/datalake/sdk/datalakeanalytics/2016-11-01/accounts"
-	analyticsfirewallrules "github.com/hashicorp/terraform-provider-azurerm/internal/services/datalake/sdk/datalakeanalytics/2016-11-01/firewallrules"
-	storeaccount "github.com/hashicorp/terraform-provider-azurerm/internal/services/datalake/sdk/datalakestore/2016-11-01/accounts"
-	storefirewallrules "github.com/hashicorp/terraform-provider-azurerm/internal/services/datalake/sdk/datalakestore/2016-11-01/firewallrules"
-	storevirtualnetworkrules "github.com/hashicorp/terraform-provider-azurerm/internal/services/datalake/sdk/datalakestore/2016-11-01/virtualnetworkrules"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	analyticsaccount "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datalake/sdk/datalakeanalytics/2016-11-01/accounts"
+	analyticsfirewallrules "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datalake/sdk/datalakeanalytics/2016-11-01/firewallrules"
+	storeaccount "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datalake/sdk/datalakestore/2016-11-01/accounts"
+	storefirewallrules "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datalake/sdk/datalakestore/2016-11-01/firewallrules"
+	storevirtualnetworkrules "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datalake/sdk/datalakestore/2016-11-01/virtualnetworkrules"
 )
 
 type Client struct {

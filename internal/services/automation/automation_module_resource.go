@@ -6,15 +6,15 @@ import (
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/services/preview/automation/mgmt/2018-06-30-preview/automation"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/automation/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/automation/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/automation/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/automation/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceAutomationModule() *pluginsdk.Resource {

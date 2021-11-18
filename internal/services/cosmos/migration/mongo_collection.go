@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 var _ pluginsdk.StateUpgrade = MongoCollectionV0ToV1{}

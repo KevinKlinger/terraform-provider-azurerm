@@ -2,9 +2,9 @@ package helper
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/preview/sql/mgmt/v5.0/sql"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func ExtendedAuditingSchema() *pluginsdk.Schema {

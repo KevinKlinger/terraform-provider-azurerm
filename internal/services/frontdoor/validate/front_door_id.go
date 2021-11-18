@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/parse"
 )
 
 func FrontDoorID(input interface{}, key string) (warnings []string, errors []error) {

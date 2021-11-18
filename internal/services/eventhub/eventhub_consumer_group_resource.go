@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-helpers/lang/response"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/sdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/sdk/2017-04-01/consumergroups"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/sdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/sdk/2017-04-01/consumergroups"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 type ConsumerGroupObject struct {

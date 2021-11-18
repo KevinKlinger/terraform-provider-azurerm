@@ -8,16 +8,16 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-helpers/lang/response"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/locks"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/sdk/2017-04-01/checknameavailabilitydisasterrecoveryconfigs"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/sdk/2017-04-01/disasterrecoveryconfigs"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/locks"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/sdk/2017-04-01/checknameavailabilitydisasterrecoveryconfigs"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/sdk/2017-04-01/disasterrecoveryconfigs"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceEventHubNamespaceDisasterRecoveryConfig() *pluginsdk.Resource {

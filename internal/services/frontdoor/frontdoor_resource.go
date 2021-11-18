@@ -8,19 +8,19 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-helpers/lang/response"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/migration"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
-	azValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tags"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/migration"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
+	azValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tags"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceFrontDoor() *pluginsdk.Resource {
@@ -1172,7 +1172,7 @@ func expandFrontDoorRoutingRule(input []interface{}, frontDoorId frontdoors.Fron
 		}
 
 		// Preserve existing rules engine for this routing rule
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/7455#issuecomment-882769364
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7455#issuecomment-882769364
 		if rulesEngines != nil {
 			if rulesEngine, ok := (*rulesEngines)[name]; ok {
 				currentRoutingRule.Properties.RulesEngine = rulesEngine

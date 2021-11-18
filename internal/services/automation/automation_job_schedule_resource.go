@@ -8,15 +8,15 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/services/preview/automation/mgmt/2018-06-30-preview/automation"
 	"github.com/gofrs/uuid"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/automation/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/automation/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/automation/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/automation/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceAutomationJobSchedule() *pluginsdk.Resource {
@@ -122,7 +122,7 @@ func resourceAutomationJobScheduleCreate(d *pluginsdk.ResourceData, meta interfa
 		}
 	}
 
-	// fix issue: https://github.com/hashicorp/terraform-provider-azurerm/issues/7130
+	// fix issue: https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7130
 	// When the runbook has some updates, it'll update all related job schedule id, so the elder job schedule will not exist
 	// We need to delete the job schedule id if exists to recreate the job schedule
 	for jsIterator, err := client.ListByAutomationAccountComplete(ctx, resourceGroup, accountName, ""); jsIterator.NotDone(); err = jsIterator.NextWithContext(ctx) {

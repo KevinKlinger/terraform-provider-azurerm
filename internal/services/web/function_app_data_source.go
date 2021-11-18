@@ -5,13 +5,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	webValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/web/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tags"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	webValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/web/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tags"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func dataSourceFunctionApp() *pluginsdk.Resource {

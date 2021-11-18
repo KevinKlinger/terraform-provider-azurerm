@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/signalr/sdk/2020-05-01/signalr"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/signalr/sdk/2020-05-01/signalr"
 )
 
 type Client struct {

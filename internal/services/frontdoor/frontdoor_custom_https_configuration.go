@@ -1,9 +1,9 @@
 package frontdoor
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 func schemaCustomHttpsConfiguration() map[string]*pluginsdk.Schema {

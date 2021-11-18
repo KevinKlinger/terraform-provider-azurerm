@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/check"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/check"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage"
 )
 
 type StorageAccountBlobContainerSASDataSource struct{}

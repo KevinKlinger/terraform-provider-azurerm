@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/parse"
-	resourcesClient "github.com/hashicorp/terraform-provider-azurerm/internal/services/resource/client"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/parse"
+	resourcesClient "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/resource/client"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 var keyVaultsCache = map[string]keyVaultDetails{}

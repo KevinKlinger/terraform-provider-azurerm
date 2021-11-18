@@ -13,23 +13,23 @@ import (
 	autorestAzure "github.com/Azure/go-autorest/autorest/azure"
 	"github.com/hashicorp/go-azure-helpers/lang/response"
 	"github.com/hashicorp/go-getter/helper/url"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/locks"
-	msiparse "github.com/hashicorp/terraform-provider-azurerm/internal/services/msi/parse"
-	msiValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/msi/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/network"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/migration"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tags"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/suppress"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/locks"
+	msiparse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/msi/parse"
+	msiValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/msi/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/network"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/migration"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tags"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/suppress"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 	"github.com/tombuildsstuff/giovanni/storage/2019-12-12/blob/accounts"
 	"github.com/tombuildsstuff/giovanni/storage/2019-12-12/queue/queues"
 )
@@ -948,10 +948,10 @@ func resourceStorageAccountCreate(d *pluginsdk.ResourceData, meta interface{}) e
 	}
 
 	// For all Clouds except Public, China, and USGovernmentCloud, don't specify "allow_blob_public_access" and "min_tls_version" in request body.
-	// https://github.com/hashicorp/terraform-provider-azurerm/issues/7812
-	// https://github.com/hashicorp/terraform-provider-azurerm/issues/8083
+	// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7812
+	// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/8083
 	// USGovernmentCloud allow_blob_public_access and min_tls_version allowed as of issue 9128
-	// https://github.com/hashicorp/terraform-provider-azurerm/issues/9128
+	// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/9128
 	if envName != autorestAzure.PublicCloud.Name && envName != autorestAzure.USGovernmentCloud.Name && envName != autorestAzure.ChinaCloud.Name {
 		if allowBlobPublicAccess || minimumTLSVersion != string(storage.TLS10) {
 			return fmt.Errorf(`%q and "min_tls_version" are not supported for a Storage Account located in %q`, allowPublicNestedItemsName, envName)
@@ -1050,7 +1050,7 @@ func resourceStorageAccountCreate(d *pluginsdk.ResourceData, meta interface{}) e
 			blobProperties := expandBlobProperties(val.([]interface{}))
 
 			// last_access_time_enabled and container_delete_retention_policy are not supported in USGov
-			// Fix issue https://github.com/hashicorp/terraform-provider-azurerm/issues/11772
+			// Fix issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/11772
 			if v := d.Get("blob_properties.0.last_access_time_enabled").(bool); v {
 				blobProperties.LastAccessTimeTrackingPolicy = &storage.LastAccessTimeTrackingPolicy{
 					Enable: utils.Bool(v),
@@ -1171,7 +1171,7 @@ func resourceStorageAccountUpdate(d *pluginsdk.ResourceData, meta interface{}) e
 	if d.HasChange("shared_access_key_enabled") {
 		allowSharedKeyAccess = d.Get("shared_access_key_enabled").(bool)
 
-		// If AllowSharedKeyAccess is nil that breaks the Portal UI as reported in https://github.com/hashicorp/terraform-provider-azurerm/issues/11689
+		// If AllowSharedKeyAccess is nil that breaks the Portal UI as reported in https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/11689
 		// currently the Portal UI reports nil as false, and per the ARM API documentation nil is true. This manifests itself in the Portal UI
 		// when a storage account is created by terraform that the AllowSharedKeyAccess is Disabled when it is actually Enabled, thus confusing out customers
 		// to fix this, I have added this code to explicitly to set the value to true if is nil to workaround the Portal UI bug for our customers.
@@ -1282,9 +1282,9 @@ func resourceStorageAccountUpdate(d *pluginsdk.ResourceData, meta interface{}) e
 		minimumTLSVersion := d.Get("min_tls_version").(string)
 
 		// For all Clouds except Public, China, and USGovernmentCloud, don't specify "min_tls_version" in request body.
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/8083
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/8083
 		// USGovernmentCloud "min_tls_version" allowed as of issue 9128
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/9128
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/9128
 		if envName != autorestAzure.PublicCloud.Name && envName != autorestAzure.USGovernmentCloud.Name && envName != autorestAzure.ChinaCloud.Name {
 			if minimumTLSVersion != string(storage.TLS10) {
 				return fmt.Errorf(`"min_tls_version" is not supported for a Storage Account located in %q`, envName)
@@ -1306,9 +1306,9 @@ func resourceStorageAccountUpdate(d *pluginsdk.ResourceData, meta interface{}) e
 		allowBlobPublicAccess := d.Get(allowPublicNestedItemsName).(bool)
 
 		// For all Clouds except Public, China, and USGovernmentCloud, don't specify "allow_blob_public_access" in request body.
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/7812
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7812
 		// USGovernmentCloud "allow_blob_public_access" allowed as of issue 9128
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/9128
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/9128
 		if envName != autorestAzure.PublicCloud.Name && envName != autorestAzure.USGovernmentCloud.Name && envName != autorestAzure.ChinaCloud.Name {
 			if allowBlobPublicAccess {
 				return fmt.Errorf(`%q is not supported for a Storage Account located in %q`, allowPublicNestedItemsName, envName)
@@ -1420,7 +1420,7 @@ func resourceStorageAccountUpdate(d *pluginsdk.ResourceData, meta interface{}) e
 			blobProperties := expandBlobProperties(d.Get("blob_properties").([]interface{}))
 
 			// last_access_time_enabled and container_delete_retention_policy are not supported in USGov
-			// Fix issue https://github.com/hashicorp/terraform-provider-azurerm/issues/11772
+			// Fix issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/11772
 			if d.HasChange("blob_properties.0.last_access_time_enabled") {
 				lastAccessTimeTracking := false
 				if v := d.Get("blob_properties.0.last_access_time_enabled").(bool); v {
@@ -1600,10 +1600,10 @@ func resourceStorageAccountRead(d *pluginsdk.ResourceData, meta interface{}) err
 		}
 
 		// For all Clouds except Public, China, and USGovernmentCloud, "min_tls_version" is not returned from Azure so always persist the default values for "min_tls_version".
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/7812
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/8083
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7812
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/8083
 		// USGovernmentCloud "min_tls_version" allowed as of issue 9128
-		// https://github.com/hashicorp/terraform-provider-azurerm/issues/9128
+		// https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/9128
 		envName := meta.(*clients.Client).Account.Environment.Name
 		if envName != autorestAzure.PublicCloud.Name && envName != autorestAzure.USGovernmentCloud.Name && envName != autorestAzure.ChinaCloud.Name {
 			d.Set("min_tls_version", string(storage.TLS10))

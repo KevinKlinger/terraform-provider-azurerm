@@ -1,10 +1,10 @@
 package apimanagement
 
 import (
-	keyVaultValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/suppress"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	keyVaultValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/suppress"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 func apiManagementResourceHostnameSchema() map[string]*pluginsdk.Schema {

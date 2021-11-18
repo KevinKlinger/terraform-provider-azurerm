@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 type TenantTemplateDeploymentId struct {

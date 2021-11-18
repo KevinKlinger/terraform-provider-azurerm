@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
 )
 
 // Your server name can contain only lowercase letters, numbers, and '-', but can't start or end with '-' or have more than 63 characters.

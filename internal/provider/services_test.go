@@ -3,7 +3,7 @@ package provider
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/sdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/sdk"
 )
 
 func TestTypedDataSourcesContainValidModelObjects(t *testing.T) {

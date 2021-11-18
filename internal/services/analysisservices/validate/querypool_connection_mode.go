@@ -1,9 +1,9 @@
 package validate
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/analysisservices/sdk/2017-08-01/servers"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/analysisservices/sdk/2017-08-01/servers"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 func QueryPoolConnectionMode() pluginsdk.SchemaValidateFunc {

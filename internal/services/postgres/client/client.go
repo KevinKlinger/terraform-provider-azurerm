@@ -3,7 +3,7 @@ package client
 import (
 	"github.com/Azure/azure-sdk-for-go/services/postgresql/mgmt/2020-01-01/postgresql"
 	"github.com/Azure/azure-sdk-for-go/services/postgresql/mgmt/2021-06-01/postgresqlflexibleservers"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
 )
 
 type Client struct {

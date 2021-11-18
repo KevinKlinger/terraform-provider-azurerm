@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/devspace/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/devspace/parse"
 )
 
 func ControllerID(input interface{}, key string) (warnings []string, errors []error) {

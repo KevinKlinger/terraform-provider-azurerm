@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/resource/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/resource/parse"
 )
 
 // ResourceProviderID validates that the specified Resource Provider ID is Valid

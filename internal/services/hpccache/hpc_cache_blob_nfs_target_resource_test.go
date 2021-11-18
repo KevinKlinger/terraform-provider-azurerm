@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/check"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/hpccache/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/check"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/hpccache/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 type HPCCacheBlobNFSTargetResource struct {
@@ -274,7 +274,7 @@ resource "azurerm_storage_account" "test" {
   }
 }
 
-# Due to https://github.com/hashicorp/terraform-provider-azurerm/issues/2977 and the fact
+# Due to https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/2977 and the fact
 # that the NFSv3 enabled storage account can't allow public network access - otherwise the NFSv3 protocol will fail,
 # we have to use the ARM template to deploy the storage container as a workaround.
 # Once the issue above got resolved, we can instead use the azurerm_storage_container resource.

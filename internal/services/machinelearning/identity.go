@@ -5,9 +5,9 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/services/machinelearningservices/mgmt/2021-07-01/machinelearningservices"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	msiParse "github.com/hashicorp/terraform-provider-azurerm/internal/services/msi/parse"
-	msiValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/msi/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	msiParse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/msi/parse"
+	msiValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/msi/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 type SystemAssignedUserAssigned struct{}

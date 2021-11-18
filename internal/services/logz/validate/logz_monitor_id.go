@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/logz/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/logz/parse"
 )
 
 func LogzMonitorID(input interface{}, key string) (warnings []string, errors []error) {

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/eventhub/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/eventhub/validate"
 )
 
 func TestValidateEventHubName(t *testing.T) {

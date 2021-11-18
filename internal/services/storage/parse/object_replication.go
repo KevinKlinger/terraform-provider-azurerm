@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 // This is manual for concat two ids are not supported in auto-generation

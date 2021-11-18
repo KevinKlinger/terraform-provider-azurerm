@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/Azure/azure-sdk-for-go/services/containerservice/mgmt/2021-08-01/containerservice"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/containers/client"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/containers/client"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func validateKubernetesCluster(d *pluginsdk.ResourceData, cluster *containerservice.ManagedCluster, resourceGroup, name string) error {

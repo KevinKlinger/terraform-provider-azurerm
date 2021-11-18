@@ -1,7 +1,7 @@
 package datalake
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 type Registration struct{}
@@ -32,7 +32,7 @@ func (r Registration) SupportedResources() map[string]*pluginsdk.Resource {
 		"azurerm_data_lake_analytics_firewall_rule":    resourceDataLakeAnalyticsFirewallRule(),
 		"azurerm_data_lake_store_file":                 resourceDataLakeStoreFile(),
 		"azurerm_data_lake_store_firewall_rule":        resourceDataLakeStoreFirewallRule(),
-		"azurerm_data_lake_store":                      resourceDataLakeStore(), // TODO 3.0 consider renaming  storage_data_lake_gen1_filesystem|store to as per https://github.com/hashicorp/terraform-provider-azurerm/issues/13910
+		"azurerm_data_lake_store":                      resourceDataLakeStore(), // TODO 3.0 consider renaming  storage_data_lake_gen1_filesystem|store to as per https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/13910
 		"azurerm_data_lake_store_virtual_network_rule": resourceDataLakeStoreVirtualNetworkRule(),
 	}
 }

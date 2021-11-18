@@ -1,6 +1,6 @@
 package videoanalyzer
 
-import "github.com/hashicorp/terraform-provider-azurerm/utils"
+import "github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 
 func expandTags(input map[string]interface{}) *map[string]string {
 	output := make(map[string]string)

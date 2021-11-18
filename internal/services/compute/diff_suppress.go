@@ -1,6 +1,6 @@
 package compute
 
-import "github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+import "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 
 // nolint: deadcode unused
 func adminPasswordDiffSuppressFunc(_, old, new string, _ *pluginsdk.ResourceData) bool {

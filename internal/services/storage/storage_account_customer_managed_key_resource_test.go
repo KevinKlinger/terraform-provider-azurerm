@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/Azure/azure-sdk-for-go/services/storage/mgmt/2021-01-01/storage"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/check"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	storageParse "github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/check"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	storageParse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 type StorageAccountCustomerManagedKeyResource struct{}

@@ -3,7 +3,7 @@ package parse
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 type SecurityCenterAutomationId struct {

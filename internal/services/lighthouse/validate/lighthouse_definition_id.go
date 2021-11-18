@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/lighthouse/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/lighthouse/parse"
 )
 
 func LighthouseDefinitionID(i interface{}, k string) (warnings []string, errors []error) {

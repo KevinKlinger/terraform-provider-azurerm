@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/Azure/go-autorest/autorest/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
 )
 
 const (

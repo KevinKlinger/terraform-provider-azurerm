@@ -7,8 +7,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/services/preview/synapse/2020-08-01-preview/accesscontrol"
 	"github.com/Azure/azure-sdk-for-go/services/synapse/mgmt/2021-03-01/synapse"
 	"github.com/Azure/go-autorest/autorest"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/synapse/sdk/2021-06-01-preview/artifacts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/synapse/sdk/2021-06-01-preview/artifacts"
 )
 
 type Client struct {

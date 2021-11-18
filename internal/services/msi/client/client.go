@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/msi/sdk/2018-11-30/managedidentity"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/msi/sdk/2018-11-30/managedidentity"
 )
 
 type Client struct {

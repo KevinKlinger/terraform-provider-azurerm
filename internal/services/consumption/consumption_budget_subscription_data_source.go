@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/consumption/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/consumption/validate"
-	subscriptionParse "github.com/hashicorp/terraform-provider-azurerm/internal/services/subscription/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/consumption/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/consumption/validate"
+	subscriptionParse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/subscription/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceArmConsumptionBudgetSubscriptionDataSource() *pluginsdk.Resource {

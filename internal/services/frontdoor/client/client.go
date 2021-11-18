@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/sdk/2020-04-01/webapplicationfirewallpolicies"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/sdk/2020-04-01/webapplicationfirewallpolicies"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
 )
 
 type Client struct {

@@ -8,14 +8,14 @@ import (
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/services/preview/sql/mgmt/v5.0/sql"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	keyVaultParser "github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/parse"
-	keyVaultValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/keyvault/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/mssql/parse"
-	mssqlValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/mssql/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	keyVaultParser "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/parse"
+	keyVaultValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/keyvault/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/mssql/parse"
+	mssqlValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/mssql/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceMsSqlTransparentDataEncryption() *pluginsdk.Resource {

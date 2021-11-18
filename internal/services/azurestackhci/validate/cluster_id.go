@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/azurestackhci/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/azurestackhci/parse"
 )
 
 func ClusterID(input interface{}, key string) (warnings []string, errors []error) {

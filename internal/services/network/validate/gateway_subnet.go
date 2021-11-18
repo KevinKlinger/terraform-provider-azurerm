@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/network/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/network/parse"
 )
 
 func IsGatewaySubnet(i interface{}, k string) (warnings []string, errors []error) {

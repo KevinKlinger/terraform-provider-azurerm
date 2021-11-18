@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/streamanalytics/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/streamanalytics/parse"
 )
 
 func OutputID(input interface{}, key string) (warnings []string, errors []error) {

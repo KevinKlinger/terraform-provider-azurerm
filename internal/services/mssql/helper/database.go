@@ -8,9 +8,9 @@ import (
 	"github.com/Azure/azure-sdk-for-go/services/preview/sql/mgmt/v5.0/sql"
 	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2020-06-01/resources"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/location"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/mssql/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/location"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/mssql/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 // FindDatabaseReplicationPartners looks for partner databases having one of the specified replication roles, by

@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/apimanagement"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/apimanagement"
 )
 
 func TestXmlWithDotNetInterpolationsDiffSuppress(t *testing.T) {

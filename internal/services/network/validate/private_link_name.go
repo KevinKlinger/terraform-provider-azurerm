@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
 )
 
 func PrivateLinkName(i interface{}, k string) (_ []string, errors []error) {

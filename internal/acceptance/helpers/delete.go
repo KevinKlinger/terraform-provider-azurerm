@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/types"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/types"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
 )
 
 // DeleteResourceFunc returns a TestCheckFunc which deletes the resource within Azure

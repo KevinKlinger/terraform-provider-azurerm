@@ -1,7 +1,7 @@
 package configurationstores
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/identity"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/identity"
 )
 
 type ConfigurationStore struct {

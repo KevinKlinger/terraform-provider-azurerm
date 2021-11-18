@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/provider"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/sdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/provider"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/sdk"
 )
 
 // NOTE: since we're using `go run` for these tools all of the code needs to live within the main.go

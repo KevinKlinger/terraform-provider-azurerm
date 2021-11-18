@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/containers/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/containers/parse"
 )
 
 func ContainerRegistryScopeMapID(input interface{}, key string) (warnings []string, errors []error) {

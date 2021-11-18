@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/servicefabricmesh/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/servicefabricmesh/parse"
 )
 
 func NetworkID(input interface{}, key string) (warnings []string, errors []error) {

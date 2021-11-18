@@ -2,12 +2,12 @@ package cdn
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/cdn/mgmt/2020-09-01/cdn"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/cdn/deliveryruleactions"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/cdn/deliveryruleconditions"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/cdn/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/cdn/deliveryruleactions"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/cdn/deliveryruleconditions"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/cdn/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func endpointDeliveryRule() *pluginsdk.Schema {

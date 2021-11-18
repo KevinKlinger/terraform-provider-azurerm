@@ -6,14 +6,14 @@ import (
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/services/network/mgmt/2021-02-01/network"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/locks"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/sdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/loadbalancer/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/loadbalancer/validate"
-	networkValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/network/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/locks"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/sdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/loadbalancer/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/loadbalancer/validate"
+	networkValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/network/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 var _ sdk.Resource = BackendAddressPoolAddressResource{}

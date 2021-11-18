@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/consumption/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/consumption/parse"
 )
 
 func ConsumptionBudgetSubscriptionID(input interface{}, key string) (warnings []string, errors []error) {

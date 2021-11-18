@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/Azure/azure-sdk-for-go/services/storage/mgmt/2021-01-01/storage"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/parse"
 )
 
 var (

@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/batch/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/batch/parse"
 )
 
 func PoolID(input interface{}, key string) (warnings []string, errors []error) {

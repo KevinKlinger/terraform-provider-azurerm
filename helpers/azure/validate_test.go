@@ -3,7 +3,7 @@ package azure_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 func TestHelper_AzureResourceID(t *testing.T) {

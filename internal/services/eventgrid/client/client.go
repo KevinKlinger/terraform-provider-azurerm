@@ -2,7 +2,7 @@ package client
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/preview/eventgrid/mgmt/2020-10-15-preview/eventgrid"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
 )
 
 type Client struct {

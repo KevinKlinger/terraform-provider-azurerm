@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/springcloud/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/springcloud/parse"
 )
 
 func SpringCloudAppAssociationID(input interface{}, key string) (warnings []string, errors []error) {

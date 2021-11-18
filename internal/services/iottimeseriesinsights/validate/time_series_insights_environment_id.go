@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/iottimeseriesinsights/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/iottimeseriesinsights/parse"
 )
 
 func TimeSeriesInsightsEnvironmentID(i interface{}, k string) (warnings []string, errors []error) {

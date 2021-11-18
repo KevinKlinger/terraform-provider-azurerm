@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/set"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/set"
 )
 
 var _ pluginsdk.StateUpgrade = KeyVaultV0ToV1{}

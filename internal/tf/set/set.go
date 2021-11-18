@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
 )
 
 func HashInt(v interface{}) int {

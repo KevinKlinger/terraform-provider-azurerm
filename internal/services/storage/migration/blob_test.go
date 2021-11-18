@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/Azure/go-autorest/autorest/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
 )
 
 func TestBlobV0ToV1(t *testing.T) {

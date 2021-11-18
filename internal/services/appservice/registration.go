@@ -1,8 +1,8 @@
 package appservice
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/sdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/sdk"
 )
 
 var _ sdk.TypedServiceRegistration = Registration{}

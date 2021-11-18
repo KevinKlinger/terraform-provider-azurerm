@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/Azure/azure-sdk-for-go/services/redisenterprise/mgmt/2021-03-01/redisenterprise"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 // RedisEnterpriseClusterSkuName - validates if passed input string contains a valid Redis Enterprise Cluster Sku

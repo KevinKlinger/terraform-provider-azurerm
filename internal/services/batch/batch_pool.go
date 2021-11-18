@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/Azure/azure-sdk-for-go/services/batch/mgmt/2021-06-01/batch"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 // flattenBatchPoolAutoScaleSettings flattens the auto scale settings for a Batch pool

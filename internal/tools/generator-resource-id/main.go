@@ -12,7 +12,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
 )
 
 var packagesUsingAlias = map[string]struct{}{
@@ -340,7 +340,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
 )
 
 %s
@@ -567,7 +567,7 @@ func %[1]sIDInsensitively(input string) (*%[1]sId, error) {
 func (id ResourceIdGenerator) TestCode() string {
 	importLine := ""
 	if id.TestPackageSuffix != "" {
-		importLine = fmt.Sprintf("\"github.com/hashicorp/terraform-provider-azurerm/internal/services/%s/parse\"", id.ServicePackageName)
+		importLine = fmt.Sprintf("\"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/%s/parse\"", id.ServicePackageName)
 	}
 
 	return fmt.Sprintf(`
@@ -578,7 +578,7 @@ package parse%s
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/resourceid"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/resourceid"
 	%s
 )
 
@@ -910,7 +910,7 @@ func (id ResourceIdGenerator) ValidatorCode() string {
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/%[2]s/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/%[2]s/parse"
 )
 
 func %[1]sID(input interface{}, key string) (warnings []string, errors []error) {
@@ -1009,7 +1009,7 @@ func Test%[1]sID(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/%[4]s/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/%[4]s/validate"
 )
 
 func Test%[2]sID(t *testing.T) {

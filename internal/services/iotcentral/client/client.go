@@ -2,7 +2,7 @@ package client
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/iotcentral/mgmt/2018-09-01/iotcentral"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
 )
 
 type Client struct {

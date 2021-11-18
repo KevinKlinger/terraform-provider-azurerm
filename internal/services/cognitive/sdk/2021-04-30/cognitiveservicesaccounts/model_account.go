@@ -1,7 +1,7 @@
 package cognitiveservicesaccounts
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/identity"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/identity"
 )
 
 type Account struct {

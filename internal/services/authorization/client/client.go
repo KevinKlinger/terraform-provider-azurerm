@@ -3,7 +3,7 @@ package client
 import (
 	"github.com/Azure/azure-sdk-for-go/services/graphrbac/1.6/graphrbac"
 	"github.com/Azure/azure-sdk-for-go/services/preview/authorization/mgmt/2020-04-01-preview/authorization"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
 )
 
 type Client struct {

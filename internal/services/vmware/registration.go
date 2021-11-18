@@ -1,6 +1,6 @@
 package vmware
 
-import "github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+import "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 
 type Registration struct{}
 

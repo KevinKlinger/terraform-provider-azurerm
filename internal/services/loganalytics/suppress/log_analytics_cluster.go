@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/url"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 func LogAnalyticsClusterUrl(_, old, new string, _ *pluginsdk.ResourceData) bool {

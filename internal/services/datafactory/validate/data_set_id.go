@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/datafactory/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/datafactory/parse"
 )
 
 func DataSetID(input interface{}, key string) (warnings []string, errors []error) {

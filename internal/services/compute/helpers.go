@@ -2,7 +2,7 @@ package compute
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/compute/mgmt/2020-12-01/compute"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func expandIDsToSubResources(input []interface{}) *[]compute.SubResource {

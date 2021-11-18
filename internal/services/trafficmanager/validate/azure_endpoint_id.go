@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/trafficmanager/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/trafficmanager/parse"
 )
 
 func AzureEndpointID(input interface{}, key string) (warnings []string, errors []error) {

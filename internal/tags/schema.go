@@ -1,6 +1,6 @@
 package tags
 
-import "github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+import "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 
 // SchemaDataSource returns the Schema which should be used for Tags on a Data Source
 func SchemaDataSource() *pluginsdk.Schema {

@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/apimanagement/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/apimanagement/parse"
 )
 
 func EmailTemplateID(input interface{}, key string) (warnings []string, errors []error) {

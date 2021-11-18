@@ -1,7 +1,7 @@
 package validate
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 var ValidateWebApplicationFirewallPolicyRuleGroupName = validation.StringInSlice([]string{

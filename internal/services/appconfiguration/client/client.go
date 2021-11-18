@@ -6,9 +6,9 @@ import (
 
 	"github.com/Azure/go-autorest/autorest"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/common"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/appconfiguration/sdk/1.0/appconfiguration"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/appconfiguration/sdk/2020-06-01/configurationstores"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/common"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/appconfiguration/sdk/1.0/appconfiguration"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/appconfiguration/sdk/2020-06-01/configurationstores"
 )
 
 type Client struct {

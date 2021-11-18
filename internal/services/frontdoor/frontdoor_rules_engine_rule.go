@@ -6,16 +6,16 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-helpers/lang/response"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/location"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
-	azValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/frontdoor/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/location"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/sdk/2020-05-01/frontdoors"
+	azValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/frontdoor/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceFrontDoorRulesEngine() *pluginsdk.Resource {
@@ -148,7 +148,7 @@ func resourceFrontDoorRulesEngine() *pluginsdk.Resource {
 									"negate_condition": {
 										Type:     pluginsdk.TypeBool,
 										Optional: true,
-										Default:  true, // TODO 3,0 change to false- needs to change https://github.com/hashicorp/terraform-provider-azurerm/pull/13605
+										Default:  true, // TODO 3,0 change to false- needs to change https://github.com/kevinklinger/terraform-provider-azurerm/v2/pull/13605
 									},
 
 									"value": {

@@ -7,10 +7,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/helpers"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/testclient"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance/types"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/provider"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/helpers"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/testclient"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance/types"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/provider"
 )
 
 // lintignore:AT001

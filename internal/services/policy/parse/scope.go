@@ -3,8 +3,8 @@ package parse
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	parseMgmtGroup "github.com/hashicorp/terraform-provider-azurerm/internal/services/managementgroup/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	parseMgmtGroup "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/managementgroup/parse"
 )
 
 type PolicyScopeId interface {

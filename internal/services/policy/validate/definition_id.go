@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/policy/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/policy/parse"
 )
 
 func PolicyDefinitionID(i interface{}, k string) (warnings []string, errors []error) {

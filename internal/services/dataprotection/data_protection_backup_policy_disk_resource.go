@@ -8,16 +8,16 @@ import (
 	"time"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/tf"
-	helperValidate "github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/dataprotection/legacysdk/dataprotection"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/dataprotection/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/dataprotection/validate"
-	azSchema "github.com/hashicorp/terraform-provider-azurerm/internal/tf/schema"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/tf"
+	helperValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/dataprotection/legacysdk/dataprotection"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/dataprotection/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/dataprotection/validate"
+	azSchema "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/schema"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceDataProtectionBackupPolicyDisk() *schema.Resource {

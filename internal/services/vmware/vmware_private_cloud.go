@@ -1,8 +1,8 @@
 package vmware
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/vmware/sdk/2020-03-20/privateclouds"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/vmware/sdk/2020-03-20/privateclouds"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func flattenPrivateCloudManagementCluster(input privateclouds.ManagementCluster) []interface{} {

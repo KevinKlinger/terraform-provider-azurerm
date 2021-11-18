@@ -3,7 +3,7 @@ package shim
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 	"github.com/tombuildsstuff/giovanni/storage/2019-12-12/queue/queues"
 )
 

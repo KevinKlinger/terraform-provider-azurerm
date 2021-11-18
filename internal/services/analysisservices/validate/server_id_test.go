@@ -5,7 +5,7 @@ package validate_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/analysisservices/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/analysisservices/validate"
 )
 
 func TestServerID(t *testing.T) {

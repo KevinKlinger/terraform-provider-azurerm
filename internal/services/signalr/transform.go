@@ -1,6 +1,6 @@
 package signalr
 
-import "github.com/hashicorp/terraform-provider-azurerm/utils"
+import "github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 
 func flattenTags(input *map[string]string) map[string]*string {
 	output := make(map[string]*string)

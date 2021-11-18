@@ -2,7 +2,7 @@ package network
 
 import (
 	"github.com/Azure/azure-sdk-for-go/services/network/mgmt/2021-02-01/network"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func expandNetworkSubResourceID(input []interface{}) *[]network.SubResource {

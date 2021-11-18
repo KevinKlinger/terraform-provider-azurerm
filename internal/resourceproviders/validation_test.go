@@ -3,7 +3,7 @@ package resourceproviders
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
 )
 
 func TestEnhancedValidationDisabled(t *testing.T) {

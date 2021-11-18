@@ -1,7 +1,7 @@
 package msi
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 // TODO: we should probably rename this Identity, or move into Authorization

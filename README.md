@@ -8,7 +8,7 @@ Version 2.x of the AzureRM Provider requires Terraform 0.12.x and later, but 1.0
 
 * [Terraform Website](https://www.terraform.io)
 * [AzureRM Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
-* [AzureRM Provider Usage Examples](https://github.com/hashicorp/terraform-provider-azurerm/tree/main/examples)
+* [AzureRM Provider Usage Examples](https://github.com/kevinklinger/terraform-provider-azurerm/v2/tree/main/examples)
 * [Slack Workspace for Contributors](https://terraform-azure.slack.com) ([Request Invite](https://join.slack.com/t/terraform-azure/shared_invite/enQtNDMzNjQ5NzcxMDc3LWNiY2ZhNThhNDgzNmY0MTM0N2MwZjE4ZGU0MjcxYjUyMzRmN2E5NjZhZmQ0ZTA1OTExMGNjYzA4ZDkwZDYxNDE))
 
 ## Usage Example
@@ -85,12 +85,12 @@ You must run `Developing the Provider` commands in `bash` because `sh` scrips ar
 
 If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (version 1.16+ is **required**). You'll also need to correctly setup a [GOPATH](http://golang.org/doc/code.html#GOPATH), as well as adding `$GOPATH/bin` to your `$PATH`.
 
-First clone the repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-azurerm`
+First clone the repository to: `$GOPATH/src/github.com/kevinklinger/terraform-provider-azurerm/v2`
 
 ```sh
 $ mkdir -p $GOPATH/src/github.com/hashicorp; cd $GOPATH/src/github.com/hashicorp
 $ git clone git@github.com:hashicorp/terraform-provider-azurerm
-$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-azurerm
+$ cd $GOPATH/src/github.com/kevinklinger/terraform-provider-azurerm/v2
 ```
 
 Once inside the provider directory, you can run `make tools` to install the dependent tooling required to compile the provider.

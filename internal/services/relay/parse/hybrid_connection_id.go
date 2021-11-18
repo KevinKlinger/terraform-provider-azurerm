@@ -1,7 +1,7 @@
 package parse
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/relay/sdk/2017-04-01/hybridconnections"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/relay/sdk/2017-04-01/hybridconnections"
 )
 
 func HybridConnectionID(input string) (*hybridconnections.HybridConnectionId, error) {

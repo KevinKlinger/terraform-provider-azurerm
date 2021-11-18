@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/services/storage/mgmt/2021-01-01/storage"
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/storage/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/timeouts"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/storage/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/timeouts"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 func resourceStorageManagementPolicy() *pluginsdk.Resource {
@@ -132,7 +132,7 @@ func resourceStorageManagementPolicy() *pluginsdk.Resource {
 													Optional: true,
 													Default:  nil,
 													// todo: default change to -1 to allow value 0 in 3.0
-													// for issue https://github.com/hashicorp/terraform-provider-azurerm/issues/6158
+													// for issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/6158
 													ValidateFunc: validation.IntBetween(0, 99999),
 												},
 												"tier_to_archive_after_days_since_modification_greater_than": {
@@ -140,7 +140,7 @@ func resourceStorageManagementPolicy() *pluginsdk.Resource {
 													Optional: true,
 													Default:  nil,
 													// todo: default change to -1 to allow value 0 in 3.0
-													// for issue https://github.com/hashicorp/terraform-provider-azurerm/issues/6158
+													// for issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/6158
 													ValidateFunc: validation.IntBetween(0, 99999),
 												},
 												"delete_after_days_since_modification_greater_than": {
@@ -148,7 +148,7 @@ func resourceStorageManagementPolicy() *pluginsdk.Resource {
 													Optional: true,
 													Default:  nil,
 													// todo: default change to -1 to allow value 0 in 3.0
-													// for issue https://github.com/hashicorp/terraform-provider-azurerm/issues/6158
+													// for issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/6158
 													ValidateFunc: validation.IntBetween(0, 99999),
 												},
 											},
@@ -177,7 +177,7 @@ func resourceStorageManagementPolicy() *pluginsdk.Resource {
 													Type:     pluginsdk.TypeInt,
 													Optional: true,
 													// todo: default change to -1 to allow value 0 in 3.0
-													// for issue https://github.com/hashicorp/terraform-provider-azurerm/issues/6158
+													// for issue https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/6158
 													ValidateFunc: validation.IntBetween(0, 99999),
 												},
 											},

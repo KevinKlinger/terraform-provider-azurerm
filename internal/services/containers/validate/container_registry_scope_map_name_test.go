@@ -3,7 +3,7 @@ package validate_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/containers/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/containers/validate"
 )
 
 func TestContainerRegistryScopeMapName(t *testing.T) {

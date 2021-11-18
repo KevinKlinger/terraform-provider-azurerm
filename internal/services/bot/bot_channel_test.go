@@ -3,7 +3,7 @@ package bot_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/acceptance"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/acceptance"
 )
 
 func TestAccBotChannelsRegistration(t *testing.T) {

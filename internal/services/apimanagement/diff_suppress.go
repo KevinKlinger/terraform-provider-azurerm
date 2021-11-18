@@ -3,8 +3,8 @@ package apimanagement
 import (
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/suppress"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/suppress"
 )
 
 // XmlWithDotNetInterpolationsDiffSuppress is a Diff Suppress Func for when the XML contains

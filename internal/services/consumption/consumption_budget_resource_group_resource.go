@@ -3,9 +3,9 @@ package consumption
 import (
 	"time"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/consumption/parse"
-	resourceParse "github.com/hashicorp/terraform-provider-azurerm/internal/services/resource/parse"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/consumption/parse"
+	resourceParse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/resource/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
 )
 
 func resourceArmConsumptionBudgetResourceGroup() *pluginsdk.Resource {

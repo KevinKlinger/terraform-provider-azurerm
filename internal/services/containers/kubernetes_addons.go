@@ -6,14 +6,14 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/services/containerservice/mgmt/2021-08-01/containerservice"
 	"github.com/Azure/go-autorest/autorest/azure"
-	commonValidate "github.com/hashicorp/terraform-provider-azurerm/helpers/validate"
-	laparse "github.com/hashicorp/terraform-provider-azurerm/internal/services/loganalytics/parse"
-	logAnalyticsValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/loganalytics/validate"
-	applicationGatewayValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/network/validate"
-	subnetValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/network/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
-	"github.com/hashicorp/terraform-provider-azurerm/utils"
+	commonValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/validate"
+	laparse "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/loganalytics/parse"
+	logAnalyticsValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/loganalytics/validate"
+	applicationGatewayValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/network/validate"
+	subnetValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/network/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/utils"
 )
 
 const (
@@ -34,15 +34,15 @@ const (
 // omitted from this list an addon/environment combination will be supported
 var unsupportedAddonsForEnvironment = map[string][]string{
 	azure.ChinaCloud.Name: {
-		aciConnectorKey,           // https://github.com/hashicorp/terraform-provider-azurerm/issues/5510
-		httpApplicationRoutingKey, // https://github.com/hashicorp/terraform-provider-azurerm/issues/5960
-		kubernetesDashboardKey,    // https://github.com/hashicorp/terraform-provider-azurerm/issues/7487
+		aciConnectorKey,           // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/5510
+		httpApplicationRoutingKey, // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/5960
+		kubernetesDashboardKey,    // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7487
 		openServiceMeshKey,        // Preview features are not supported in Azure China
 	},
 	azure.USGovernmentCloud.Name: {
-		azurePolicyKey,            // https://github.com/hashicorp/terraform-provider-azurerm/issues/6702
-		httpApplicationRoutingKey, // https://github.com/hashicorp/terraform-provider-azurerm/issues/5960
-		kubernetesDashboardKey,    // https://github.com/hashicorp/terraform-provider-azurerm/issues/7136
+		azurePolicyKey,            // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/6702
+		httpApplicationRoutingKey, // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/5960
+		kubernetesDashboardKey,    // https://github.com/kevinklinger/terraform-provider-azurerm/v2/issues/7136
 		openServiceMeshKey,        // Preview features are not supported in Azure Government
 	},
 }

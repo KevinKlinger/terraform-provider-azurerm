@@ -6,8 +6,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/hashicorp/go-azure-helpers/resourceproviders"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/clients"
-	rmResourceProviders "github.com/hashicorp/terraform-provider-azurerm/internal/resourceproviders"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/clients"
+	rmResourceProviders "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/resourceproviders"
 )
 
 // since this depends on GetAuthConfig which lives in this package

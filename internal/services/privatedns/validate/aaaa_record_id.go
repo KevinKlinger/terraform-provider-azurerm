@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/privatedns/parse"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/privatedns/parse"
 )
 
 func AaaaRecordID(input interface{}, key string) (warnings []string, errors []error) {

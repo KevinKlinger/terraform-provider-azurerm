@@ -3,7 +3,7 @@ package validate
 import (
 	"regexp"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 func RecoveryServicesVaultName(v interface{}, k string) (warnings []string, errors []error) {

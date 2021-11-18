@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/features"
 )
 
 func TestExpandFeatures(t *testing.T) {

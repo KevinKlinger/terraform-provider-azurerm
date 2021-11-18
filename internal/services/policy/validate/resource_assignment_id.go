@@ -1,12 +1,12 @@
 package validate
 
 import (
-	"github.com/hashicorp/terraform-provider-azurerm/helpers/azure"
-	managementGroupValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/managementgroup/validate"
-	resourceValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/resource/validate"
-	subscriptionValidate "github.com/hashicorp/terraform-provider-azurerm/internal/services/subscription/validate"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/helpers/azure"
+	managementGroupValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/managementgroup/validate"
+	resourceValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/resource/validate"
+	subscriptionValidate "github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/subscription/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/pluginsdk"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tf/validation"
 )
 
 func ResourceAssignmentId() pluginsdk.SchemaValidateFunc {

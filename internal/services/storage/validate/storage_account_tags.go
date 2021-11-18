@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/tags"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/tags"
 )
 
 func StorageAccountTags(v interface{}, _ string) (warnings []string, errors []error) {

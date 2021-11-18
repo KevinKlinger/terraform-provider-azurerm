@@ -3,7 +3,7 @@ package helper
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-azurerm/internal/services/mssql/validate"
+	"github.com/kevinklinger/terraform-provider-azurerm/v2/internal/services/mssql/validate"
 )
 
 // Your server name can contain only lowercase letters, numbers, and '-', but can't start or end with '-' or have more than 63 characters.
