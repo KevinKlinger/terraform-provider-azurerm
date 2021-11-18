@@ -1,4 +1,4 @@
-module github.com/KevinKlinger/terraform-provider-azurerm/v2
+module github.com/kevinklinger/terraform-provider-azurerm/v2
 
 require (
 	cloud.google.com/go/storage v1.16.0 // indirect
